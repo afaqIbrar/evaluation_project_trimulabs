@@ -1,11 +1,11 @@
 const express = require('express');
 const {graphqlHTTP} = require('express-graphql');
 const {GraphQLSchema} = require('graphql');
-const emplyeeSchema = require("./schemas/employeeSchema");
+const employeeSchema = require("./schemas/employeeSchema");
 /**
  * Object initialization for employeeScheema
  */
-const schemaObject = new emplyeeSchema();
+const schemaObject = new employeeSchema();
 schemaObject.setRootQueryType();
 schemaObject.setRootMutationType();
 /**
